@@ -1,20 +1,28 @@
-const button = document.getElementById("changebutton");
+const button = document.querySelector("#changebutton");
 const body = document.querySelector("body");
+const rgbTextElement = document.createElement("p");
+const rgbTextContainer = document.querySelector("#rbgContainer");
 
 const selection = ["red", "blue", "yellow"];
+
+const changeColor = (event) => {
+  event.preventDefault();
+  body.style.backgroundColor = randomRgbGen();
+  rgbTextElement.id = "rbgText";
+  rgbTextElement.innerHTML = randomRgbGen();
+  rgbTextContainer.appendChild(rgbTextElement);
+};
 
 const randomRgbGen = () => {
   const num1 = Math.floor(Math.random() * 256);
   const num2 = Math.floor(Math.random() * 256);
   const num3 = Math.floor(Math.random() * 256);
 
-  return `rgb(${num1}, ${num2}, ${num3})`;
+  const rgbValue = `rgb(${num1}, ${num2}, ${num3})`;
+  return rgbValue;
 };
+
 console.log(randomRgbGen());
-const changeColor = (event) => {
-  event.preventDefault();
-  body.style.backgroundColor = randomRgbGen();
-};
 
 button.addEventListener("click", changeColor);
 

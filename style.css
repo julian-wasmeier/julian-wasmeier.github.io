@@ -31,7 +31,6 @@ header {
   border-color: black;
   border-width: 3px;
   border-style: solid;
-  
 }
 #changebutton:focus {
   outline: none;
@@ -39,4 +38,21 @@ header {
 #changebutton:hover {
   background-color: rgb(214, 201, 127);
   cursor: pointer;
+}
+
+#rbgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  width: fit-content;
+  margin: 0 auto;
+  
+}
+
+#rbgText {
+  font-size: 2rem;
+  margin: 1rem;
 }
