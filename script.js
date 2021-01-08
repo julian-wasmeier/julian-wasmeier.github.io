@@ -2,6 +2,7 @@ const button = document.querySelector("#changebutton");
 const body = document.querySelector("body");
 const rgbTextElement = document.createElement("p");
 const rgbTextContainer = document.querySelector("#rbgContainer");
+rgbTextContainer.style.visibility = "hidden";
 
 const selection = ["red", "blue", "yellow"];
 
@@ -11,6 +12,7 @@ const changeColor = (event) => {
   rgbTextElement.id = "rbgText";
   rgbTextElement.innerHTML = randomRgbGen();
   rgbTextContainer.appendChild(rgbTextElement);
+  rgbTextContainer.style.visibility = "visible";
 };
 
 const randomRgbGen = () => {
