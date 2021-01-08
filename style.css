@@ -28,7 +28,10 @@ header {
   width: 10%;
   border-radius: 10px;
   background: white;
-  border: 2px, solid, black;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  
 }
 #changebutton:focus {
   outline: none;
