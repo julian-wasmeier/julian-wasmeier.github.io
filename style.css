@@ -23,4 +23,16 @@ header {
 }
 #changebutton {
   margin: 5rem;
+  border: none;
+  height: 5rem;
+  width: 10%;
+  border-radius: 10px;
+  background: white;
+}
+#changebutton:focus {
+  outline: none;
+}
+#changebutton:hover {
+  background-color: rgb(214, 201, 127);
+  cursor: pointer;
 }
