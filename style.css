@@ -5,16 +5,22 @@
 }
 html {
   font-size: 62.5%;
+  font-family: Goldman, sans-serif;
 }
 body {
+  display: flex;
   min-height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
 }
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Goldman, sans-serif;
-  margin: 10rem;
+  font-size: 3rem;
+  
+  margin: 4rem;
 }
 #buttoncontainer {
   display: flex;
@@ -31,12 +37,14 @@ header {
   border-color: black;
   border-width: 3px;
   border-style: solid;
+  font-family: Goldman, sans-serif;
+  font-size: 2rem;
 }
 #changebutton:focus {
   outline: none;
 }
 #changebutton:hover {
-  background-color: rgb(214, 201, 127);
+  background-color: rgb(142, 180, 224);
   cursor: pointer;
 }
 
@@ -48,8 +56,7 @@ header {
   border-width: 3px;
   border-style: solid;
   width: fit-content;
-  margin: 0 auto;
-  
+  margin: 4rem auto;
 }
 
 #rbgText {
